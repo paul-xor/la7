@@ -4,14 +4,13 @@ const app = express();
 const path = require("path");
 const router = express.Router();
 
-app.set("view engine", "ejs");
-
 //ROUTES.
 router.get("/", function(req, res) {
   res.render("index.ejs");
 });
 
 // MIDDLEWARE.
+app.set("view engine", "ejs");
 app.use("/", router);
 app.use(express.static(path.join(__dirname, "public")));
 
