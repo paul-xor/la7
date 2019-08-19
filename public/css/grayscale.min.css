@@ -3,6 +3,20 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
+@font-face {
+  font-family: "Abang";
+
+  src: url("/fonts/Abang.otf");
+
+  /* src: url("../fonts/WebFont.eot?iefix") format("eot"),
+    url("../fonts/WebFont.woff") format("woff"),
+    url("../fonts/WebFont.ttf") format("truetype"),
+    url("../fonts/WebFont.svg#webfont") format("svg"); */
+
+  font-weight: normal;
+  font-style: normal;
+}
+
 #mainNav {
   min-height: 56px;
   background-color: #fff;
@@ -18,7 +32,7 @@
 }
 /* ----------------------CHANGE LOGO---------------------- */
 #mainNav .navbar-brand {
-  font-family: "Allerta Stencil", sans-serif;
+  font-family: "Abang";
   color: #161616;
   font-weight: 700;
   font-size: 2.5rem;
@@ -146,7 +160,7 @@
   background-size: cover;
 }
 .masthead h1 {
-  font-family: "Maven Pro";
+  font-family: "Abang";
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
