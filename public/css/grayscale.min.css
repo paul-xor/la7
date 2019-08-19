@@ -187,16 +187,20 @@
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
   font-family: "Maven Pro";
-  font-size: 80%;
+  font-size: 120%;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   border: 0;
+  border-radius: 12px;
 }
 .btn-primary {
-  background-color: #64a19d;
+  background: -webkit-linear-gradient(
+    rgba(0, 206, 255, 0.7),
+    rgba(0, 82, 210, 0.8)
+  );
 }
 .btn-primary:hover {
-  background-color: #4f837f;
+  background-color: #00ceff;
 }
 .btn-primary:focus {
   background-color: #4f837f;
