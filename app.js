@@ -14,6 +14,13 @@ app.set("view engine", "ejs");
 app.use("/", router);
 app.use(express.static(path.join(__dirname, "public")));
 
+app.all("*", (req, res, next) => {
+  res.status(404).json({
+    status: "fail",
+    message: `Can't find ${req.originalUrl} on this server.`
+  });
+});
+
 // SERVER.
 const port = 7777;
 app.listen(port, () => {
