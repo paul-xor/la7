@@ -1,6 +1,9 @@
 // const app = require("./app");
 const express = require("express");
 const app = express();
+
+const AppError = require("./utils/appError");
+const globalErrorHandler = require("./controllers/errorController");
 const path = require("path");
 const router = express.Router();
 
@@ -15,11 +18,10 @@ app.use("/", router);
 app.use(express.static(path.join(__dirname, "public")));
 
 app.all("*", (req, res, next) => {
-  res.status(404).json({
-    status: "fail",
-    message: `Can't find ${req.originalUrl} on this server.`
-  });
+  next(new AppError(`Can't find ${req.originalUrl} on this server.`, 404));
 });
+
+app.use(globalErrorHandler);
 
 // SERVER.
 const port = 7777;
