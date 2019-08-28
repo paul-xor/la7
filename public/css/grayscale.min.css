@@ -3,7 +3,7 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
-@font-face {
+/* @font-face {
   font-family: "Abang";
 
   src: url("/fonts/Abang.otf");
@@ -15,7 +15,7 @@
 
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 #mainNav {
   min-height: 56px;
@@ -32,7 +32,7 @@
 }
 /* ----------------------CHANGE LOGO---------------------- */
 #mainNav .navbar-brand {
-  font-family: "Abang";
+  font-family: "ArchicocoRegular";
   color: #161616;
   font-weight: 700;
   font-size: 2.5rem;
@@ -160,7 +160,7 @@
   background-size: cover;
 }
 .masthead h1 {
-  font-family: "Abang";
+  font-family: "ArchicocoRegular";
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
@@ -244,7 +244,7 @@
   margin-bottom: 5rem;
 }
 .projects-section {
-  padding: 10rem 0;
+  padding: 5rem 0;
 }
 .projects-section .featured-text {
   padding: 2rem;
