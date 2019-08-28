@@ -96,3 +96,80 @@
   background-size: 110% 110%;
 }
 /* --------------------------------------------------------------------------------- */
+/* -------------------------------SERVICES------------------------------------------ */
+.masthead-services {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(22, 22, 22, 0.3)),
+      color-stop(75%, rgba(22, 22, 22, 0.7)),
+      to(#161616)
+    ),
+    url(../img/services.jpg);
+  background: linear-gradient(
+      to bottom,
+      rgba(22, 22, 22, 0.3) 0,
+      rgba(22, 22, 22, 0.7) 75%,
+      #161616 100%
+    ),
+    url(../img/services.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.masthead-services h1 {
+  font-family: "Abang";
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  background: -webkit-linear-gradient(
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.masthead-services h2 {
+  max-width: 20rem;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .masthead-services h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+@media (min-width: 992px) {
+  .masthead-services {
+    height: 100vh;
+    padding: 0;
+  }
+  .masthead-services h1 {
+    font-size: 8rem;
+    line-height: 8rem;
+    letter-spacing: 0.8rem;
+  }
+  .masthead-services h2 {
+    max-width: 30rem;
+    font-size: 1.25rem;
+  }
+}
+.abstruct-figure-2 {
+  position: relative;
+  /* width: 100%;
+  height: 100%; */
+  /* min-height: 35rem; */
+  /* padding: 15rem 0; */
+  background-image: url("../img/abs-lightgrey.png");
+  background-position: center;
+  /* background-size: cover; */
+  background-size: 110% 110%;
+}
+/* --------------------------------------------------------------------------------- */

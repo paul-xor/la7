@@ -14,7 +14,9 @@ router.get("/", function(req, res) {
 router.get("/about", function(req, res) {
   res.render("about.ejs");
 });
-
+router.get("/services", function(req, res) {
+  res.render("services.ejs");
+});
 // MIDDLEWARE.
 app.set("view engine", "ejs");
 app.use("/", router);
