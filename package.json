@@ -34,7 +34,8 @@
     "ejs": "^2.6.2",
     "express": "^4.17.1",
     "jquery": "3.4.1",
-    "jquery.easing": "^1.4.1"
+    "jquery.easing": "^1.4.1",
+    "nodemailer": "^6.3.0"
   },
   "devDependencies": {
     "browser-sync": "2.26.7",
