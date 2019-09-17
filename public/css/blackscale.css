@@ -72,7 +72,6 @@ img {
 
 #card-brand {
   background: #413333;
-  height: 400px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -151,6 +150,9 @@ img {
   section {
     -webkit-column-count: 2;
             column-count: 2;
+  }
+  #card-brand {
+    min-height: 400px;
   }
 }
 /*# sourceMappingURL=blackscale.css.map */

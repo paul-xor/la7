@@ -62,7 +62,6 @@ img {
 }
 #card-brand {
   background: rgb(65, 51, 51);
-  height: 400px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -112,6 +111,10 @@ img {
       left: -2em;
       background: rgb(231, 3, 3);
       border-radius: 1em;
+    }
+
+    #card-brand {
+      min-height: 400px;
     }
   }
 
