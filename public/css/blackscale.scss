@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Prata&display=swap");
 
+@font-face {
+  font-family: "Comfortaa-Light";
+  src: url("/fonts/Comfortaa-Light.ttf");
+}
+
 body {
   margin: 0;
   background: rgb(15, 15, 15);
@@ -10,7 +15,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Prata";
+  font-family: "Comfortaa-Light";
   margin-top: 0;
   margin-bottom: 2em;
 }
@@ -20,7 +25,7 @@ h3 {
 }
 
 p {
-  font-family: "Lato";
+  font-family: "Comfortaa-Light";
   color: rgb(160, 160, 160);
   margin-top: 0;
 }
@@ -35,6 +40,29 @@ section {
 img {
   width: 80%;
   margin: 1em 0 0;
+}
+
+.card {
+  font-family: "Comfortaa-Light";
+  font-size: 1em;
+}
+.card-body {
+  align-self: center;
+}
+#card-title-topic {
+  color: whitesmoke;
+}
+#card-title-brand {
+  color: red;
+}
+#card-topic {
+  background: black;
+  border: 2px solid gray;
+  border-radius: 2em;
+}
+#card-brand {
+  background: rgb(65, 51, 51);
+  height: 400px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -72,6 +100,7 @@ img {
     display: inline-block;
     position: relative;
     z-index: 1;
+    color: rgb(231, 3, 3);
 
     &::before {
       content: " ";
@@ -79,9 +108,9 @@ img {
       width: 30%;
       height: 10px;
       z-index: -1;
-      bottom: -0.3em;
+      bottom: -0.8em;
       left: -2em;
-      background: purple;
+      background: rgb(231, 3, 3);
       border-radius: 1em;
     }
   }
@@ -115,6 +144,6 @@ img {
     width: 80%;
   }
   section {
-    column-count: 3;
+    column-count: 2;
   }
 }
