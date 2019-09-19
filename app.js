@@ -2,11 +2,15 @@
 const express = require("express");
 const app = express();
 
+const dotenv = require("dotenv");
+
 const AppError = require("./utils/appError");
 const globalErrorHandler = require("./controllers/errorController");
 const path = require("path");
 const router = express.Router();
 const sendEmail = require("./utils/email");
+
+dotenv.config({ path: "./config.env" });
 
 //ROUTES.
 router.get("/", function(req, res) {
