@@ -1,3 +1,4 @@
+require("dotnev").config();
 const nodemailer = require("nodemailer");
 
 const sendEmail = async options => {

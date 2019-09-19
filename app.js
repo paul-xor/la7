@@ -6,6 +6,7 @@ const AppError = require("./utils/appError");
 const globalErrorHandler = require("./controllers/errorController");
 const path = require("path");
 const router = express.Router();
+const sendEmail = require("./utils/email");
 
 //ROUTES.
 router.get("/", function(req, res) {
