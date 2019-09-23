@@ -10,29 +10,30 @@
         <li><i class="fa fa-envelope"></i> welcome@la7digital.com</li>
       </ul>
     </div>
+
     <div class="contact">
       <h3>Email Us</h3>
-      {{ msg }}
-      <form method="POST" action="send">
+
+      <form method="POST" action="email">
         <p>
           <label>Name</label>
-          <input type="text" name="name" />
+          <input type="text" name="name" id="name" />
         </p>
         <p>
           <label>Company</label>
-          <input type="text" name="company" />
+          <input type="text" name="company" id="company" />
         </p>
         <p>
           <label>Email Address</label>
-          <input type="email" name="email" />
+          <input type="email" name="email" id="email" />
         </p>
         <p>
           <label>Phone Number</label>
-          <input type="text" name="phone" />
+          <input type="text" name="phone" id="phone" />
         </p>
         <p class="full">
           <label>Message</label>
-          <textarea name="message" rows="5"></textarea>
+          <textarea name="message" id="message" rows="5"></textarea>
         </p>
         <p class="full">
           <button type="submit">Submit</button>
