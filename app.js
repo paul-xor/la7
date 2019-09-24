@@ -2,6 +2,7 @@
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
+const expbs = require("express-handlebars");
 const nodemailer = require("nodemailer");
 
 const dotenv = require("dotenv");
@@ -15,16 +16,12 @@ dotenv.config({ path: "./config.env" });
 
 //ROUTES.
 router.get("/", function(req, res) {
-  res.render("index.ejs");
+  res.render("index", { msg: "something ...", isDisplay: false });
 });
-router.get("/about", function(req, res) {
-  res.render("about.ejs");
-});
-router.get("/services", function(req, res) {
-  res.render("services.ejs");
-});
+
 // MIDDLEWARE.
-app.set("view engine", "ejs");
+app.engine("handlebars", expbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
 app.use("/", router);
 app.use(express.static(path.join(__dirname, "public")));
 
@@ -78,7 +75,10 @@ app.post("/email", (req, res) => {
     console.log("Message sent: %s", info.messageId);
     console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
 
-    res.render("index", { msg: "Email has been sent" });
+    res.render("index", {
+      msg: "Email has been sent",
+      isDisplay: true
+    });
   });
 });
 

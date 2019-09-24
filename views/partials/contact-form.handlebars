@@ -12,7 +12,9 @@
     </div>
     <div class="contact">
       <h3>Email Us</h3>
-
+      {{#if isDisplay}}
+      <h4>{{ msg }}</h4>
+      {{else}}
       <form method="POST" action="email">
         <p>
           <label>Name</label>
@@ -38,6 +40,7 @@
           <button type="submit">Submit</button>
         </p>
       </form>
+      {{/if}}
     </div>
   </div>
 </div>
