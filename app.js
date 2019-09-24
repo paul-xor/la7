@@ -3,6 +3,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
 const nodemailer = require("nodemailer");
+const expbs = require("express-handlebars");
 
 const dotenv = require("dotenv");
 
@@ -10,17 +11,17 @@ const AppError = require("./utils/appError");
 const globalErrorHandler = require("./controllers/errorController");
 const path = require("path");
 const router = express.Router();
-// const sendEmail = require("./utils/email");
 
 dotenv.config({ path: "./config.env" });
 
 //ROUTES.
 router.get("/", function(req, res) {
-  res.render("index.ejs");
+  res.render("index", { msg: "something ...", isDisplay: false });
 });
 
 // MIDDLEWARE.
-app.set("view engine", "ejs");
+app.engine("handlebars", expbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
 app.use("/", router);
 app.use(express.static(path.join(__dirname, "public")));
 // Body Parser Middleware
@@ -73,7 +74,10 @@ app.post("/email", (req, res) => {
     console.log("Message sent: %s", info.messageId);
     console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
 
-    res.render("index", { msg: "Email has been sent" });
+    res.render("index", {
+      msg: "Email has been sent",
+      isDisplay: true
+    });
   });
 });
 
@@ -84,7 +88,7 @@ app.all("*", (req, res, next) => {
 app.use(globalErrorHandler);
 
 // SERVER.
-const port = 7771;
+const port = 7777;
 app.listen(port, () => {
   console.log(`Server running on PORT:${port} ...`);
 });
