@@ -49,6 +49,10 @@ img {
 .card-body {
   align-self: center;
 }
+.card-text {
+  color: #181818;
+}
+
 #card-title-topic {
   color: whitesmoke;
 }
@@ -61,7 +65,11 @@ img {
   border-radius: 2em;
 }
 #card-brand {
-  background: rgb(65, 51, 51);
+  background: rgb(185, 183, 183);
+  min-height: 380px;
+}
+#focus-messsage {
+  color: #a0a0a0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -91,7 +99,7 @@ img {
   }
 
   article {
-    padding: 2em;
+    padding: 1em;
     background: #181818;
   }
 
@@ -104,17 +112,13 @@ img {
     &::before {
       content: " ";
       position: absolute;
-      width: 30%;
+      width: 120px;
       height: 10px;
       z-index: -1;
       bottom: -0.8em;
-      left: -2em;
+      left: -1em;
       background: rgb(231, 3, 3);
       border-radius: 1em;
-    }
-
-    #card-brand {
-      min-height: 400px;
     }
   }
 
@@ -144,9 +148,35 @@ img {
 @media only screen and (min-width: 1100px) {
   .outer {
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
   }
   section {
     column-count: 2;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    font-size: 0.9em;
+  }
+  #card-brand {
+    min-height: 280px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card {
+    font-size: 0.9em;
+  }
+  #card-brand {
+    min-height: 480px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .card {
+    font-size: 0.9em;
+  }
+  #card-brand {
+    min-height: 480px;
   }
 }

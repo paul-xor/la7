@@ -181,12 +181,13 @@
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: -webkit-linear-gradient(
+  color: rgb(222, 222, 222);
+  /* background: -webkit-linear-gradient(
     rgba(255, 255, 255, 0.95),
     rgba(255, 255, 255, 0.2)
   );
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; */
 }
 .masthead h2 {
   font-family: "Comfortaa-Light";
@@ -195,8 +196,8 @@
 }
 @media (min-width: 768px) {
   .masthead h1 {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
   }
 }
 @media (min-width: 992px) {
@@ -206,7 +207,7 @@
   }
   .masthead h1 {
     font-size: 4rem;
-    line-height: 4rem;
+    line-height: 6rem;
     letter-spacing: 0.8rem;
   }
   .masthead h2 {
@@ -227,7 +228,7 @@
 }
 .btn-primary {
   background: -webkit-linear-gradient(
-    rgba(255, 0, 234, 0.7),
+    rgba(255, 0, 0, 0.7),
     rgba(210, 0, 56, 0.8)
   );
 }
