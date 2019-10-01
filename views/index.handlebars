@@ -23,39 +23,44 @@
   <article>
     <div id="about">
       <h2>You are in Digital Company</h2>
-      <section>
-        <p>
-          LA7 Digital Hub is a Vancouver based digital company combining
-          marketing and technology to create your unique business identity and
-          enable you to stay out of digital noise.
-        </p>
 
-        <p>
-          A new customer behaviour enabled by internet and mobile technologies
-          force you to rethink your business approaches reorienting on
-          customer experience.
-        </p>
+      <div class="row">
+        <div class="col-md-6 mt-5">
+          <p>
+            LA7 Digital Hub is a Vancouver based digital company combining
+            marketing and technology to create your unique business identity and
+            enable you to stay out of digital noise.
+          </p>
 
-        {{!-- <a href="#about" class="btn btn-primary js-scroll-trigger justify-content-start mt-2">Our work</a> --}}
+          <p>
+            A new customer behaviour enabled by internet and mobile technologies
+            force you to rethink your business approaches reorienting on
+            customer experience.
+          </p>
 
-        <h3>About us</h3>
+          {{!-- <a href="#about" class="btn btn-primary js-scroll-trigger justify-content-start mt-2">Our work</a> --}}
+          <hr>
+          <br>
 
-        <p>
-          Our team has a deep expertise in branding, digital marketing and
-          web/mobile app development.
-        </p>
+          <h3>About us</h3>
 
-        <img src="../img/think-outside-the-box.jpg" height="250" alt="Think outside the box" />
-        <hr />
+          <p>
+            Our team has a deep expertise in branding, digital marketing and
+            web/mobile app development.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="../img/think-outside-the-box.jpg" height="300" alt="Think outside the box" class="leftimg" />
 
-        <h3>How we work</h3>
 
-        <p>
-          We use a proven methodology which allows you to create a unique
-          brand identity and build a strong online presence in all digital
-          channels to attract, engage and delight your customers.
-        </p>
-      </section>
+          <h3>How we work</h3>
+          <p>
+            We use a proven methodology which allows you to create a unique
+            brand identity and build a strong online presence in all digital
+            channels to attract, engage and delight your customers.
+          </p>
+        </div>
+      </div>
     </div>
     <!-- ----------------------------Branding------------------------------- -->
     <div id="services">
@@ -63,8 +68,18 @@
 
       <section>
         <div class="card mb-5" id="card-topic">
+          {{!-- <img class="card-img-top" src="../img/brending.png" alt="branding image"> --}}
           <div class="card-body">
-            <h5 class="card-title" id="card-title-topic">Branding</h5>
+            <h5 class="card-title" id="card-title-topic">
+              <div class='row'>
+                <div class="col-1">
+                  <img class="infographic" src="../img/brending.png" height="30px" width="30px" alt="branding image">
+                </div>
+                <div class="col-11">
+                  Branding
+                </div>
+              </div>
+            </h5>
             <p class="card-text" id='focus-messsage'>
               Brand is a soul of the organization customising your values,
               business promises, and digital performance that creates a unique
@@ -88,9 +103,10 @@
       </section>
       <hr class="span-all" />
 
+
       <div class="row">
         <div class="col-md-4">
-          <div class="card mb-5" id="card-brand">
+          <div class="card h-100 mb-5" id="card-brand">
             <div class="card-body">
               <h5 class="card-title" id="card-title-brand">Brand strategy</h5>
               <p class="card-text mt-4 mb-4">
@@ -103,7 +119,7 @@
         </div>
 
         <div class="col-md-4">
-          <div class="card mb-5" id="card-brand">
+          <div class="card h-100 mb-5" id="card-brand">
             <div class="card-body">
               <h5 class="card-title" id="card-title-brand">Brand identity</h5>
               <p class="card-text mt-5">
@@ -115,7 +131,7 @@
         </div>
 
         <div class="col-md-4">
-          <div class="card mb-5" id="card-brand">
+          <div class="card h-100 mb-5" id="card-brand">
             <div class="card-body">
               <h5 class="card-title" id="card-title-brand">
                 Brand guidelines
@@ -154,10 +170,19 @@
           ready to purchase.
         </p>
 
-        <div class="card mb-5" id="card-topic">
+        <div class="card h-100 mb-5" id="card-topic">
           <div class="card-body">
             <h5 class="card-title" id="card-title-topic">
-              Digital marketing
+              <div class='row'>
+                <div class="col-1">
+                  <img class="infographic" src="../img/digital-marketing.png" height="30px" width="30px"
+                    alt="branding image">
+                </div>
+                <div class="col-11">
+                  Digital marketing
+                </div>
+              </div>
+
             </h5>
             <p class="card-text" id='focus-messsage'>
               Digital marketing allows you to reach your customers in the
@@ -171,7 +196,7 @@
 
       <div class="row">
         <div class="col-md-4">
-          <div class="card mb-5" id="card-brand">
+          <div class="card h-100 mb-5" id="card-brand">
             <div class="card-body">
               <h5 class="card-title" id="card-title-brand">
                 Digital marketing strategy
@@ -187,7 +212,7 @@
         </div>
 
         <div class="col-md-4">
-          <div class="card mb-5" id="card-brand">
+          <div class="card bg-dark h-100 mb-5" id="card-brand">
             <div class="card-body">
               <h5 class="card-title" id="card-title-brand">
                 Search engine marketing(SEM)
@@ -203,7 +228,7 @@
         </div>
 
         <div class="col-md-4">
-          <div class="card mb-5" id="card-brand">
+          <div class="card h-100 mb-5" id="card-brand">
             <div class="card-body">
               <h5 class="card-title" id="card-title-brand">
                 Socialmedia marketing
@@ -226,7 +251,14 @@
         <div class="card mb-5" id="card-topic">
           <div class="card-body">
             <h5 class="card-title" id="card-title-topic">
-              Web app development
+              <div class='row'>
+                <div class="col-1">
+                  <img class="infographic" src="../img/software.png" height="30px" width="30px" alt="branding image">
+                </div>
+                <div class="col-11">
+                  Web app development
+                </div>
+              </div>
             </h5>
             <p class="card-text" id='focus-messsage'>
               Your website is the most important asset of your digital
@@ -261,7 +293,7 @@
 
       <div class="row">
         <div class="col-md-4">
-          <div class="card mb-5" id="card-brand">
+          <div class="card h-100 mb-5" id="card-brand">
             <div class="card-body">
               <h5 class="card-title" id="card-title-brand">
                 Website strategy
@@ -277,7 +309,7 @@
         </div>
 
         <div class="col-md-4">
-          <div class="card mb-5" id="card-brand">
+          <div class="card h-100 mb-5" id="card-brand">
             <div class="card-body">
               <h5 class="card-title" id="card-title-brand">
                 Website development
@@ -292,7 +324,7 @@
         </div>
 
         <div class="col-md-4">
-          <div class="card mb-5" id="card-brand">
+          <div class="card h-100 mb-5" id="card-brand">
             <div class="card-body">
               <h5 class="card-title" id="card-title-brand">Website launch</h5>
               <p class="card-text mt-5">
