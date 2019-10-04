@@ -1,9 +1,11 @@
 {
   "title": "la7digital",
   "name": "la7digital-company",
-  "version": "5.0.8",
+  "version": "1.0.0",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "build": "yarn build",
     "deploy": "gh-pages -d build"
   },
@@ -34,6 +36,7 @@
     "@fortawesome/fontawesome-free": "5.9.0",
     "body-parser": "^1.19.0",
     "bootstrap": "4.3.1",
+    "compression": "^1.7.4",
     "dotenv": "^8.1.0",
     "ejs": "^2.6.2",
     "express": "^4.17.1",
@@ -56,5 +59,8 @@
     "gulp-sass": "4.0.2",
     "gulp-uglify": "3.0.2",
     "merge-stream": "2.0.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
   }
 }
