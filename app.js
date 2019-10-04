@@ -89,6 +89,12 @@ app.all("*", (req, res, next) => {
 
 app.use(globalErrorHandler);
 
+//keep awake
+const http = require("http");
+setInterval(function() {
+  http.get("http://<your app name>.herokuapp.com");
+}, 300000); // every 5 minutes (300000)
+
 // SERVER.
 const port = process.env.PORT || 7777;
 app.listen(port, () => {
