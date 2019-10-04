@@ -11,6 +11,7 @@ const AppError = require("./utils/appError");
 const globalErrorHandler = require("./controllers/errorController");
 const path = require("path");
 const router = express.Router();
+const compression = require("compression");
 
 dotenv.config({ path: "./config.env" });
 
@@ -27,6 +28,7 @@ app.use(express.static(path.join(__dirname, "public")));
 // Body Parser Middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(compression());
 
 app.post("/email", (req, res) => {
   // console.log("Data:", req.body);
@@ -88,7 +90,7 @@ app.all("*", (req, res, next) => {
 app.use(globalErrorHandler);
 
 // SERVER.
-const port = 7777;
+const port = process.env.PORT || 7777;
 app.listen(port, () => {
   console.log(`Server running on PORT:${port} ...`);
 });
