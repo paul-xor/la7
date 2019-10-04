@@ -5,9 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js",
-    "build": "yarn build",
-    "deploy": "gh-pages -d build"
+    "dev": "nodemon app.js"
   },
   "description": "Company site.",
   "keywords": [

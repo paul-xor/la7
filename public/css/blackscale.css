@@ -96,6 +96,24 @@ img {
   top: -22px;
 }
 
+#about .text-point {
+  /* border: 1px solid #64a19d; */
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 2rem;
+}
+
+#slogan {
+  font-family: "ArchicocoRegular";
+  font-size: 1.3rem;
+  line-height: 1.1rem;
+  letter-spacing: 0.1rem;
+}
+
+.footer-link {
+  font-size: 1.5rem;
+  color: #999;
+}
+
 @media only screen and (min-width: 768px) {
   body {
     text-align: left;
