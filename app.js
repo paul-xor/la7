@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 const app = express();
 const nodemailer = require("nodemailer");
 const expbs = require("express-handlebars");
+const mailGun = require("nodemailer-mailgun-transport");
 
 const dotenv = require("dotenv");
 
@@ -46,23 +47,18 @@ app.post("/email", (req, res) => {
     <p>${req.body.message}</p>
   `;
 
-  const transporter = nodemailer.createTransport({
-    // host: process.env.EMAIL_HOST,
-    // port: process.env.EMAIL_PORT,
-    // secure: false,
-    service: "gmail",
+  const auth = {
     auth: {
-      user: process.env.EMAIL_USERNAME,
-      pass: process.env.EMAIL_PASSWORD
-    },
-    tls: {
-      rejectUnauthorized: false
+      api_key: process.env.API_KEY || "GUNMAIL_API_KEY", // TODO: Replace with your mailgun API KEY
+      domain: process.env.DOMAIN || "GUNMAIL_DOMAIN" // TODO: Replace with your mailgun" // TODO: Replace with your mailgun DOMAIN
     }
-  });
+  };
+
+  const transporter = nodemailer.createTransport(mailGun(auth));
 
   const mailOptions = {
-    from: "Nodemailer Contact",
-    to: "Pasha <pasha.a.smolov@gmail.com>",
+    from: `${req.body.email}`,
+    to: "welcome@la7digital.com",
     subject: `LA7digital Contact Request - ${req.body.name} - ${req.body.company}`,
     // text: options.message
     html: output //html body
@@ -89,11 +85,11 @@ app.all("*", (req, res, next) => {
 
 app.use(globalErrorHandler);
 
-//keep awake
-const http = require("http");
-setInterval(function() {
-  http.get("http://la7.herokuapp.com");
-}, 300000); // every 5 minutes (300000)
+// //keep awake
+// const http = require("http");
+// setInterval(function() {
+//   http.get("http://la7.herokuapp.com");
+// }, 300000); // every 5 minutes (300000)
 
 // SERVER.
 const port = process.env.PORT || 7777;
