@@ -92,7 +92,7 @@ app.use(globalErrorHandler);
 //keep awake
 const http = require("http");
 setInterval(function() {
-  http.get("http://<your app name>.herokuapp.com");
+  http.get("http://la7.herokuapp.com");
 }, 300000); // every 5 minutes (300000)
 
 // SERVER.
