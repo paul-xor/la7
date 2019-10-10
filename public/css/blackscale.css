@@ -82,7 +82,7 @@ img {
 }
 
 #card-brand {
-  background: #b9b7b7;
+  background: -webkit-linear-gradient(white, rgba(146, 138, 142, 0.8));
 }
 
 #focus-messsage {

@@ -215,14 +215,14 @@
   );
 }
 .btn-primary:hover {
-  background-color: #00ceff;
+  background-color: #ff0077;
 }
 .btn-primary:focus {
-  background-color: #4f837f;
+  background-color: #da1175;
   color: #fff;
 }
 .btn-primary:active {
-  background-color: #467370 !important;
+  background-color: #ce0e67 !important;
 }
 
 footer {
