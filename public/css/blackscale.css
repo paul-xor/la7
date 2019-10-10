@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Prata&display=swap");
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @font-face {
@@ -40,9 +40,9 @@ p {
 
 section {
   -webkit-column-count: 1;
-  column-count: 1;
+          column-count: 1;
   -webkit-column-gap: 2em;
-  column-gap: 2em;
+          column-gap: 2em;
 }
 
 img {
@@ -59,8 +59,8 @@ img {
 
 .card-body {
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .card-text {
@@ -108,7 +108,7 @@ img {
 }
 
 #slogan {
-  font-family: "ArchicocoRegular";
+  font-family: "Comfortaa-Light";
   font-size: 1.3rem;
   line-height: 1.1rem;
   letter-spacing: 0.1rem;
@@ -129,11 +129,11 @@ img {
   }
   section {
     -webkit-column-count: 2;
-    column-count: 2;
+            column-count: 2;
     -webkit-column-rule-style: solid;
-    column-rule-style: solid;
+            column-rule-style: solid;
     -webkit-column-rule-color: #2b2b2b;
-    column-rule-color: #2b2b2b;
+            column-rule-color: #2b2b2b;
   }
   section > * {
     margin-top: 0;
@@ -178,7 +178,7 @@ img {
   }
   p.span-all {
     -webkit-column-span: all;
-    column-span: all;
+            column-span: all;
     font-size: 1.6em;
     padding: 0.5em;
     margin: 2em 0;
@@ -194,7 +194,7 @@ img {
   }
   section {
     -webkit-column-count: 2;
-    column-count: 2;
+            column-count: 2;
   }
 }
 /*# sourceMappingURL=blackscale.css.map */

@@ -2,6 +2,7 @@ node_modules
 .sass-cache
 bower_components
 
+config.env
 
 # Created by https://www.gitignore.io/api/node,sass,macos
 # Edit at https://www.gitignore.io/?templates=node,sass,macos
@@ -100,7 +101,7 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
-.env
+*.env
 .env.test
 
 # parcel-bundler cache (https://parceljs.org/)
