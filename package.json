@@ -38,7 +38,7 @@
     "dotenv": "^8.1.0",
     "ejs": "^2.6.2",
     "express": "^4.17.1",
-    "express-handlebars": "^3.1.0",
+    "express-handlebars": "^5.3.1",
     "gh-pages": "^2.1.1",
     "jquery": "3.4.1",
     "jquery.easing": "^1.4.1",
